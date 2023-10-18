@@ -56,6 +56,12 @@
 
   map.on('load',function(){
     // Give your layer's source a nickname you'll remember easily.
+
+   map.addSource('censusLayer',{
+      'type':'vector',
+      'url': 'mapbox://iamwfx.6nowkujs'
+    });
+	  
     map.addSource('sandyLayer',{
       'type':'vector',
       'url': 'mapbox://xg298.6xiqjllm'
@@ -67,6 +73,17 @@
     });
 
     // add a new layer with your polygons
+	  
+   map.addLayer({
+      'id':'povertyLevel',
+      'type':'fill',
+      'source':'censusLayer',
+      'source-layer':'nyc_blck_grp_2020_wcensus_dro-4db43i',
+      'paint':{
+        'fill-color':'green',
+        'fill-opacity': 0.5
+      }
+    });
 
     map.addLayer({
       'id':'nychaBuildings',
