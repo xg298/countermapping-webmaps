@@ -3,8 +3,11 @@ body {
   padding: 0;
 }
 #map {
-  position: relative;
+  position: fixed;
+  top: 0;
+  bottom: 0;
   width: 100%; }
+
 .map-overlay {
   font-family: 'Montserrat', sans-serif;
   position: fixed;
@@ -31,10 +34,17 @@ max-width: 400px;
 font: 12px/20px 'Montserrat Neue',sans-serif;
 }
 
+#menu {
+  margin-top: 20px; /* 与文段的距离 */
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
 .check-container {
   display: flex;
   flex-flow: row;
   justify-content: space-between;
 }
 
-}
+
