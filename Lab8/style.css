@@ -3,9 +3,7 @@ body {
   padding: 0;
 }
 #map {
-  position: fixed;
-  top: 0;
-  bottom: 0;
+  position: relative;
   width: 100%; }
 .map-overlay {
   font-family: 'Montserrat', sans-serif;
@@ -31,4 +29,12 @@ margin: 0 0 10px;
 .mapboxgl-popup {
 max-width: 400px;
 font: 12px/20px 'Montserrat Neue',sans-serif;
+}
+
+.check-container {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
 }
