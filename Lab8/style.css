@@ -54,6 +54,7 @@ font: 12px/20px 'Montserrat Neue',sans-serif;
 .check-container label {
   display: block;
   margin-bottom: 10px; /* 调整 checkbox 之间的距离 */
+  width: 100%; /* 确保每个 label 占据一行 */
 }
 
 
