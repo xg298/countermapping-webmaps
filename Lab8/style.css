@@ -45,7 +45,7 @@ font: 12px/20px 'Montserrat Neue',sans-serif;
 
 .check-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   position: absolute; /* 使用绝对定位相对于 .map-overlay-inner */
   bottom: 10px; /* 调整到底部的距离 */
