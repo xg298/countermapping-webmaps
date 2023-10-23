@@ -286,7 +286,6 @@
 
     function switchLayer(layer) {
     var clickedLayersLabel = layer.target.id; // get the label of the layer cluster
-    var clickedLayers = eval(clickedLayersLabel); // create the variable from the label using the eval function
     var visibility = map.getLayoutProperty(clickedLayersLabel, "visibility"); // check whether the cluster of layers is visible by checking the first entry
     if (visibility === "visible") {
       map.setLayoutProperty(clickedLayersLabel, "visibility", "none")
