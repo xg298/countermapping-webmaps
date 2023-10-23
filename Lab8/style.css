@@ -51,4 +51,9 @@ font: 12px/20px 'Montserrat Neue',sans-serif;
   bottom: 10px; /* 调整到底部的距离 */
 }
 
+.check-container label {
+  display: block;
+  margin-bottom: 10px; /* 调整 checkbox 之间的距离 */
+}
+
 
