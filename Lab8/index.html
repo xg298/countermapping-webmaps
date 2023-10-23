@@ -115,37 +115,37 @@
       'url': 'mapbox://xg298.20ory4ma'
     });
 
-    map.addSource('100yfloodLayer2050',{
+    map.addSource('100floodplains2050',{
       'type':'vector',
       'url': 'mapbox://iamwfx.crrx4301'
     });
 
-    map.addSource('500yfloodLayer2050',{
+    map.addSource('500floodplains2050',{
       'type':'vector',
       'url': 'mapbox://iamwfx.4ydk0450'
     });
 
-    map.addSource('100yfloodLayer2100',{
+    map.addSource('100floodplains2100',{
       'type':'vector',
       'url': 'mapbox://iamwfx.dxjuiivg'
     });
 
     // add a new layer with your polygons
 
-    map.addSource('500yfloodLayer2100',{
+    map.addSource('500floodplains2100',{
       'type':'vector',
       'url': 'mapbox://iamwfx.8thgevrt'
     });
 
     // add a new layer with your polygons
-    map.addSource('100yfloodLayer2020',{
+    map.addSource('100floodplains2020',{
       'type':'vector',
       'url': 'mapbox://iamwfx.bbchggzx'
     });
 
     // add a new layer with your polygons
 
-    map.addSource('500yfloodLayer2020',{
+    map.addSource('500floodplains2020',{
       'type':'vector',
       'url': 'mapbox://iamwfx.05ogder8'
     });
@@ -155,7 +155,7 @@
     map.addLayer({
       'id':'500yfloodLayer2020',
       'type':'fill',
-      'source':'censusLayer',
+      'source':'500floodplains2020',
       'source-layer':'FutureFloodplains_2020_500yr-0x77x0',
       'paint':{
         'fill-color' : '#ff0000',
@@ -169,7 +169,7 @@
     map.addLayer({
       'id':'100yfloodLayer2020',
       'type':'fill',
-      'source':'censusLayer',
+      'source':'100floodplains2020',
       'source-layer':'FutureFloodplains_2020_100yr-du18hr',
       'paint':{
         'fill-color' : '#ff0000',
@@ -183,7 +183,7 @@
     map.addLayer({
       'id':'500yfloodLayer2100',
       'type':'fill',
-      'source':'censusLayer',
+      'source':'500floodplains2100',
       'source-layer':'FutureFloodplains_2100_500yr-27ghpw',
       'paint':{
         'fill-color' : '#ff0000',
@@ -197,7 +197,7 @@
     map.addLayer({
       'id':'100yfloodLayer2100',
       'type':'fill',
-      'source':'censusLayer',
+      'source':'100floodplains2100',
       'source-layer':'FutureFloodplains_2100_100yr-cqwfrw',
       'paint':{
         'fill-color' : '#ff0000',
@@ -215,7 +215,7 @@
     map.addLayer({
       'id':'500yfloodLayer2050',
       'type':'fill',
-      'source':'censusLayer',
+      'source':'500floodplains2050',
       'source-layer':'FutureFloodplains_2050_500yr-a4444h',
       'paint':{
         'fill-color' : '#ff0000',
@@ -229,7 +229,7 @@
     map.addLayer({
       'id':'100yfloodLayer2050',
       'type':'fill',
-      'source':'censusLayer',
+      'source':'100floodplains2050',
       'source-layer':'FutureFloodplains_2050_100yr-6nepei',
       'paint':{
         'fill-color' : '#ff0000',
