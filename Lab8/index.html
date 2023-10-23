@@ -53,6 +53,30 @@
       Number of People Below Poverty Line
       <input id='povertyLevel' type='checkbox' name='viz-toggle' checked='checked'>
   </label>
+  <label class='check-container'>
+       2020 predicted floodplains (1 in 100 year flood)
+      <input id='100yfloodLayer2020' type='checkbox' name='viz-toggle' checked='checked'>
+  </label>
+  <label class='check-container'>
+       2020 predicted floodplains (once in 500 year flood)
+      <input id='500yfloodLayer2020' type='checkbox' name='viz-toggle' checked='checked'>
+  </label>
+  <label class='check-container'>
+       2050 predicted floodplains (once in 100 year flood)
+      <input id='100yfloodLayer2050' type='checkbox' name='viz-toggle' checked='checked'>
+  </label>
+  <label class='check-container'>
+       2050 predicted floodplains (once in 500 year flood)
+      <input id='500yfloodLayer2050' type='checkbox' name='viz-toggle' checked='checked'>
+  </label>
+  <label class='check-container'>
+       2100 predicted floodplains (once in 100 year flood)
+      <input id='100yfloodLayer2100' type='checkbox' name='viz-toggle' checked='checked'>
+  </label>
+  <label class='check-container'>
+       2100 predicted floodplains (once in 500 year flood)
+      <input id='500yfloodLayer2100' type='checkbox' name='viz-toggle' checked='checked'>
+  </label>
 </div>
 
 	</div>
@@ -91,9 +115,127 @@
       'url': 'mapbox://xg298.20ory4ma'
     });
 
+    map.addSource('100yfloodLayer2050',{
+      'type':'vector',
+      'url': 'mapbox://iamwfx.crrx4301'
+    });
+
+    map.addSource('500yfloodLayer2050',{
+      'type':'vector',
+      'url': 'mapbox://iamwfx.4ydk0450'
+    });
+
+    map.addSource('100yfloodLayer2100',{
+      'type':'vector',
+      'url': 'mapbox://iamwfx.dxjuiivg'
+    });
+
     // add a new layer with your polygons
+
+    map.addSource('500yfloodLayer2100',{
+      'type':'vector',
+      'url': 'mapbox://iamwfx.8thgevrt'
+    });
+
+    // add a new layer with your polygons
+    map.addSource('100yfloodLayer2020',{
+      'type':'vector',
+      'url': 'mapbox://iamwfx.bbchggzx'
+    });
+
+    // add a new layer with your polygons
+
+    map.addSource('500yfloodLayer2020',{
+      'type':'vector',
+      'url': 'mapbox://iamwfx.05ogder8'
+    });
+
+    // add a new layer with your polygons
+
+    map.addLayer({
+      'id':'500yfloodLayer2020',
+      'type':'fill',
+      'source':'censusLayer',
+      'source-layer':'FutureFloodplains_2020_500yr-0x77x0',
+      'paint':{
+        'fill-color' : 'ff0000',
+        'fill-opacity': 0.5
+      }
+      'layout': {
+            'visibility': 'none' // 默认隐藏
+    });
+
+    map.addLayer({
+      'id':'100yfloodLayer2020',
+      'type':'fill',
+      'source':'censusLayer',
+      'source-layer':'FutureFloodplains_2020_100yr-du18hr',
+      'paint':{
+        'fill-color' : 'ff0000',
+        'fill-opacity': 0.5
+      }
+      'layout': {
+            'visibility': 'none' // 默认隐藏
+    });
+
+    map.addLayer({
+      'id':'500yfloodLayer2100',
+      'type':'fill',
+      'source':'censusLayer',
+      'source-layer':'FutureFloodplains_2100_500yr-27ghpw',
+      'paint':{
+        'fill-color' : 'ff0000',
+        'fill-opacity': 0.5
+      }
+      'layout': {
+            'visibility': 'none' // 默认隐藏
+    });
+
+    map.addLayer({
+      'id':'100yfloodLayer2100',
+      'type':'fill',
+      'source':'censusLayer',
+      'source-layer':'FutureFloodplains_2100_100yr-cqwfrw',
+      'paint':{
+        'fill-color' : 'ff0000',
+        'fill-opacity': 0.5
+      }
+      'layout': {
+            'visibility': 'none' // 默认隐藏
+    });
+
+
+    // add a new layer with your polygons
+
+
+    map.addLayer({
+      'id':'500yfloodLayer2050',
+      'type':'fill',
+      'source':'censusLayer',
+      'source-layer':'FutureFloodplains_2050_500yr-a4444h',
+      'paint':{
+        'fill-color' : 'ff0000',
+        'fill-opacity': 0.5
+      }
+      'layout': {
+            'visibility': 'none' // 默认隐藏
+    });
+
+    map.addLayer({
+      'id':'100yfloodLayer2050',
+      'type':'fill',
+      'source':'censusLayer',
+      'source-layer':'FutureFloodplains_2050_100yr-6nepei',
+      'paint':{
+        'fill-color' : 'ff0000',
+        'fill-opacity': 0.5
+      }
+      'layout': {
+            'visibility': 'none' // 默认隐藏
+    });
 	  
-   map.addLayer({
+
+    map.addLayer({
       'id':'povertyLevel',
       'type':'fill',
       'source':'censusLayer',
