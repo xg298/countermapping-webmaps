@@ -47,15 +47,11 @@ font: 12px/20px 'Montserrat Neue',sans-serif;
   display: flex;
   flex-direction: row wrap;
   justify-content: space-between;
-  position: absolute; /* 使用绝对定位相对于 .map-overlay-inner */
-  bottom: 10px; /* 调整到底部的距离 */
 }
 
 .check-container label {
-  display: block;
   flex : 1;
   margin-bottom: 10px; /* 调整 checkbox 之间的距离 */
-  width: 100%; /* 确保每个 label 占据一行 */
 }
 
 
