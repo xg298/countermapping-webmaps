@@ -1,0 +1,22 @@
+mapboxgl.accessToken =
+'pk.eyJ1IjoieGcyOTgiLCJhIjoiY2xuYzFtdjJnMGczeDJtcHF5YTEwa25uaiJ9._S6td2Ros6VEKco8ZU1Ygg'
+
+const map = new mapboxgl.Map({
+	container:'xg298',
+	style:'mapbox://'
+	center:[-122.42285, 37.76869]
+    zoom:10.92
+    minZoom：
+    maxZoom:
+
+});
+
+map.on('load',function(){
+	map.addSource({
+
+	})
+
+	map.addLayer({
+
+   })
+}
