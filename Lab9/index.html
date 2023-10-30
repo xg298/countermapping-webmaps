@@ -333,7 +333,7 @@
                     'In 2100 1 in 100yr Floodplain?: '+P_2100_1 +'<br>'+
                     'In 2100 1 in 500yr Floodplain?: '+P_2100_5 +'</p>'
       popup.setLngLat(coordinates[0][0]).setHTML(description).addTo(map);
-      map.on('mouseleave', 'affHousing', function() {
+      map.on('mouseleave', 'affHousing', function(e) {
       map.getCanvas().style.cursor = '';
       popup.remove();
       });
