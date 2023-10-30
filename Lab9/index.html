@@ -107,12 +107,17 @@
               <input id='f80_500' type='checkbox' name='viz-toggle' checked='checked'>
           </label>
 
+           <button id="flyButton">Fly to Neighborhood</button>
+        
+
+
 
 
         <!-- <label class='check-container'>
             NYCHA Buildings
             <input id='nychaBuildings' type='checkbox' name='viz-toggle' checked='checked'>
         </label> -->
+        
 
       </div>
 
@@ -128,8 +133,10 @@
     style: 'mapbox://styles/xg298/clncb4fka07lq01qietnu8v9e', // replace this with your style URL
     center: [-73.935242, 40.730610], // The convention for coordinates is  typically [long, lat]
     zoom: 13,
-    // maxZoom: 22,
-    minZoom: 12
+    maxZoom: 22,
+    minZoom: 12，
+    pitch:45,
+    bearing:-20
   });
 
     map.on('load',function(){
@@ -307,6 +314,16 @@
           'fill-opacity': 0.3
         }
       });
+
+      document.getElementById('flyButton').addEventListener('click', function() {
+    map.flyTo({
+        center: [-74.0059, 40.7128], // 替换为目标社区的中心坐标
+        zoom: 16,
+        pitch: 45, // 替换为你想要的 pitch 角度
+        bearing: -20, // 替换为你想要的 bearing 角度
+        speed: 0.8 // 飞行速度
+    });
+});
 
       const popup = new mapboxgl.Popup({
           closeButton: false,
