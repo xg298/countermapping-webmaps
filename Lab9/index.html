@@ -312,17 +312,21 @@
           closeButton: false,
           closeOnClick: false
           });
-      map.on('mouseenter','affHousing',function(e){})
-      const coordinates = e.features[0].geometry.coordinates.slice();
+      map.on('mouseenter','affHousing',function(e){
+           const coordinates = e.features[0].geometry.coordinates.slice();
         // Here's that function that does the transformation
-      function emptyToYesNo(val){
-        if (val.length > 1){
-            return "Yes"} else {return "No"};
-            }
+           function emptyToYesNo(val){
+              if (val.length > 1){
+                return "Yes"} else {return "No"};
+                  }
+           }
       const Address = e.features[0].properties.Address;
       const BBL = e.features[0].properties.BBL;
       const Council = e.features[0].properties.Council;
       const P_2050_1 =emptyToYesNo(e.features[0].properties.P_2050_1); 
+      const P_2050_5 =emptyToYesNo(e.features[0].properties.P_2050_5);
+      const P_2100_1 =emptyToYesNo(e.features[0].properties.P_2100_1);
+      const P_2100_5 =emptyToYesNo(e.features[0].properties.P_2100_5);   
       // We apply this function to our value.
       /// THERE ARE THREE MORE VARIABLES MISSING!
       /// FILL IN THE REST
