@@ -4,7 +4,7 @@ var map = new mapboxgl.Map({
 	style:'mapbox://styles/xg298/clofvsffe004g01pdgf5ogutn',
 	center:[-122.43796, 37.60837],
 	zoom:10
-})；
+})
 
 map.on('load',function(){
     map.addLayer({
