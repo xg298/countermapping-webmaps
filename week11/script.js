@@ -9,9 +9,10 @@ var map = new mapboxgl.Map({
 map.on('load',function(){
     map.addLayer({
     	id:' inspection-layer',
+    	type:'fill',
     	source:{
     		type:'vector',
-    		url:'//studio.mapbox.com/tilesets/xg298.7povdqba'
+    		url:'https://studio.mapbox.com/tilesets/xg298.7povdqba'
      	},
      	
      	'source-layer':'Historical_Restaurant_Scores_-6lme2b',
