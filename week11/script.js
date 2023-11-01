@@ -12,8 +12,10 @@ map.on('load',function(){
     	source:{
     		type:'vector',
     		url:'//studio.mapbox.com/tilesets/xg298.7povdqba'
-     	}
+     	},
+     	
      	'source-layer':'Historical_Restaurant_Scores_-6lme2b',
+        
         paint:{
         	'fill-color':'#008F8C',
         	'fill-opacity':0.5
