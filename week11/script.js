@@ -12,7 +12,7 @@ map.on('load',function(){
     	type:'fill',
     	source:{
     		type:'vector',
-    		url:'http://localhost:8080/https://studio.mapbox.com/tilesets/xg298.7povdqba'
+    		tiles: ['https://api.mapbox.com/v4/xg298.7povdqba/{z}/{x}/{y}.vector.pbf?access_token=' + 'pk.eyJ1IjoieGcyOTgiLCJhIjoiY2xvZnZybDdiMGRkMTJrcmt0NWtxOGh3bCJ9.iFCcl0YymjvPMJDElFxsTw'],
      	},
      	
      	'source-layer':'Historical_Restaurant_Scores_-6lme2b',
