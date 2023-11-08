@@ -49,7 +49,7 @@ var config = {
             alignment: 'right',
             hidden: false,
             title: 'Second Title',
-            image: 'images/source.png',
+            image: '/Users/guanxi/Documents/GitHub/countermapping-webmaps/Lab10/images/target.svg',
             description: 'Copy these sections to add to your story.',
             location: {
                 center: [-77.020636, 38.886900],
