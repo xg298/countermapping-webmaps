@@ -1,6 +1,6 @@
 var config = {
     style:  'mapbox://styles/iamwfx/cjjx6bl926vgt2ss0l9dbpmxz',
-    accessToken: 'UPDATE-WITH-YOUR-TOKEN',
+    accessToken: 'pk.eyJ1IjoieGcyOTgiLCJhIjoiY2xvZnZybDdiMGRkMTJrcmt0NWtxOGh3bCJ9.iFCcl0YymjvPMJDElFxsTw',
     showMarkers: true,
     markerColor: '#3FB1CE',
     //projection: 'equirectangular',

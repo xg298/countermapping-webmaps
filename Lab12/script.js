@@ -1,4 +1,3 @@
-<script>
 var initLoad = true;
 var layerTypes = {
     'fill': ['fill-opacity'],
@@ -35,45 +34,46 @@ function setLayerOpacity(layer) {
     });
 }
 
-var story = document.getElementById('story');
-var features = document.createElement('div');
-features.setAttribute('id', 'features');
+document.addEventListener('DOMContentLoaded',function(){
+    var story = document.getElementById('story');
+    var features = document.createElement('div');
+    features.setAttribute('id', 'features');
 
-var header = document.createElement('div');
+    var header = document.createElement('div');
 
-if (config.title) {
-    var titleText = document.createElement('h1');
-    titleText.innerText = config.title;
-    header.appendChild(titleText);
-}
+    if (config.title) {
+       var titleText = document.createElement('h1');
+       titleText.innerText = config.title;
+       header.appendChild(titleText);
+      }
 
-if (config.subtitle) {
-    var subtitleText = document.createElement('h2');
-    subtitleText.innerText = config.subtitle;
-    header.appendChild(subtitleText);
-}
+    if (config.subtitle) {
+       var subtitleText = document.createElement('h2');
+       subtitleText.innerText = config.subtitle;
+       header.appendChild(subtitleText);
+     }
 
-if (config.byline) {
-    var bylineText = document.createElement('p');
-    bylineText.innerText = config.byline;
-    header.appendChild(bylineText);
-}
+    if (config.byline) {
+       var bylineText = document.createElement('p');
+       bylineText.innerText = config.byline;
+       header.appendChild(bylineText);
+      }
 
-if (header.innerText.length > 0) {
-    header.classList.add(config.theme);
-    header.setAttribute('id', 'header');
-    story.appendChild(header);
-}
+    if (header.innerText.length > 0) {
+       header.classList.add(config.theme);
+       header.setAttribute('id', 'header');
+       story.appendChild(header);
+      }
 
-config.chapters.forEach((record, idx) => {
-    var container = document.createElement('div');
-    var chapter = document.createElement('div');
+    config.chapters.forEach((record, idx) => {
+       var container = document.createElement('div');
+       var chapter = document.createElement('div');
 
-    if (record.title) {
-        var title = document.createElement('h3');
-        title.innerText = record.title;
-        chapter.appendChild(title);
-    }
+       if (record.title) {
+          var title = document.createElement('h3');
+          title.innerText = record.title;
+          chapter.appendChild(title);
+        }
 
     if (record.image) {
         var image = new Image();
@@ -100,23 +100,24 @@ config.chapters.forEach((record, idx) => {
         container.classList.add('hidden');
     }
     features.appendChild(container);
+    });
+
+    story.appendChild(features);
+
+   var footer = document.createElement('div');
+
+   if (config.footer) {
+     var footerText = document.createElement('p');
+     footerText.innerHTML = config.footer;
+     footer.appendChild(footerText);
+    }
+
+   if (footer.innerText.length > 0) {
+     footer.classList.add(config.theme);
+     footer.setAttribute('id', 'footer');
+     story.appendChild(footer);
+     }
 });
-
-story.appendChild(features);
-
-var footer = document.createElement('div');
-
-if (config.footer) {
-    var footerText = document.createElement('p');
-    footerText.innerHTML = config.footer;
-    footer.appendChild(footerText);
-}
-
-if (footer.innerText.length > 0) {
-    footer.classList.add(config.theme);
-    footer.setAttribute('id', 'footer');
-    story.appendChild(footer);
-}
 
 mapboxgl.accessToken = config.accessToken;
 
@@ -127,6 +128,9 @@ const transformRequest = (url) => {
       url: url + suffix
     }
 }
+console.log('Config Style:', config.style);
+console.log('Config Access Token:', config.accessToken);
+console.log('Center Coordinates:', config.chapters[0].location.center);
 
 var map = new mapboxgl.Map({
     container: 'map',
@@ -327,7 +331,6 @@ function updateInsetLayer(bounds) {
 
 
 
-// setup resize event
+
 window.addEventListener('resize', scroller.resize);
 
-</script>
