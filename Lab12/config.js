@@ -19,7 +19,7 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: 'Display Title',
-            image: 'images/source.png',
+            image: '/Users/guanxi/Documents/GitHub/countermapping-webmaps/Lab12/images/source.png',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
             location: {
                 center: [-122.418398, 37.759483],
