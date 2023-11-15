@@ -49,7 +49,7 @@ var config = {
             alignment: 'right',
             hidden: false,
             title: 'Second Title',
-            image: 'images/source.png',
+            image: '/Users/guanxi/Documents/GitHub/countermapping-webmaps/Lab12/images/source.png',
             description: 'Copy these sections to add to your story.',
             location: {
                 center: [-77.020636, 38.886900],
@@ -74,7 +74,7 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: 'Third Title',
-            image: 'image/source.png',
+            image: '/Users/guanxi/Documents/GitHub/countermapping-webmaps/Lab12/images/source.png',
             description: 'Copy these sections to add to your story.',
             location: {
               center: [-73.97615, 40.71901],
