@@ -74,7 +74,7 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: 'Third Title',
-            image: './path/to/image/source.png',
+            image: 'image/source.png',
             description: 'Copy these sections to add to your story.',
             location: {
               center: [-73.97615, 40.71901],
