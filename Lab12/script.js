@@ -67,6 +67,20 @@ function setLayerOpacity(layer) {
        header.setAttribute('id', 'header');
        story.appendChild(header);
       }
+    // 添加 para1
+    if (config.para1) {
+       var bylineText = document.createElement('p');
+       bylineText.innerText = config.para1;
+       header.appendChild(bylineText);
+      }
+
+    // 添加 para2
+    if (config.para2) {
+       var bylineText = document.createElement('p');
+       bylineText.innerText = config.para2;
+       header.appendChild(bylineText);
+       }
+
 
     config.chapters.forEach((record, idx) => {
        var container = document.createElement('div');
@@ -88,6 +102,18 @@ function setLayerOpacity(layer) {
         var story = document.createElement('p');
         story.innerHTML = record.description;
         chapter.appendChild(story);
+    }
+
+    if (record.video) {
+        var videoDiv = document.createElement('div');
+        videoDiv.setAttribute('class', 'videoContainer');
+        video =  document.createElement('video');
+        video.controls=true;
+        video.autoplay=true;
+        video.loop=true;
+        video.src = record.video;
+        videoDiv.appendChild(video)
+        chapter.appendChild(videoDiv);
     }
 
     container.setAttribute('id', record.id);

@@ -38,12 +38,57 @@
             width: 100%;
             position: relative;
             z-index: 5;
+            background-image: url("images/sandy1.png");
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: 100vw 100vh;
+            height: 170vh;  /* 修改 header 高度为 170% 的视口高度 */
         }
         #header h1, #header h2, #header p {
             margin: 0;
             padding: 2vh 2vw;
             text-align: center;
         }
+        /* style.css */
+        #header h1 {
+            font-size: 7vh;       /* Set font size to 7 viewport height units */
+            color: white;         /* Set text color to white */
+            padding-top: 30vh;    /* Add 30 viewport height units of padding above the text */
+            font-family: 'Noto Serif', sans-serif;
+        }
+
+        #header h2 {
+            font-size: 2vh;       /* Set font size to 7 viewport height units */
+            color: white;         /* Set text color to white */
+            padding-top: 5vh;    /* Add 30 viewport height units of padding above the text */
+            padding-bottom: 60vh;
+            font-family: 'Noto Serif', sans-serif;
+        }
+
+        #header p {
+            font-size: 1.2vh;       /* Set font size to 7 viewport height units */
+            color: black;         /* Set text color to white */
+            padding-top: 5vh;    /* Add 30 viewport height units of padding above the text */
+            font-family: 'Noto Serif', sans-serif;
+            text-align: justify;
+            margin-left: 34vw;
+            margin-right: 34vw;
+    
+        }
+        #interlude p{
+            font-size: 1.2vh;
+            text-align: justify;
+            margin-left: 34vw;
+            margin-right: 34vw;
+            background-color: : white;
+        }
+
+        video {
+            margin-left: 45vw;
+            width:32%;
+            transform: translate(-50%);
+        }
+
         #footer {
             width: 100%;
             min-height: 5vh;
