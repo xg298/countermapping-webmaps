@@ -6,4 +6,50 @@ body {
   position: fixed;
   top: 0;
   bottom: 0;
-  width: 100%; } 
+  width: 80%; } 
+
+#toolbar {
+  position: fixed;
+  top: 0;
+  left: 80%; /* Adjust the left position based on your layout */
+  width: 20%; /* Set the width of the toolbar */
+  background-color: #f2f2f2; /* Set the background color as needed */
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#title {
+  padding: 10px;
+  font-size: 5px;
+  font-weight: bold;
+  margin-left: 20px; /* Add your desired left margin */
+  margin-right: 20px; /* Add your desired right margin */
+}
+
+#restName {
+  margin-top: 10px; /* Add top margin as needed */
+}
+
+#restName h4 {
+  font-size: 16px; /* Adjust the font size for the h4 heading */
+  font-weight: normal; /* Adjust the font weight if needed */
+  margin-bottom: 5px; /* Add bottom margin as needed */
+  color: #333; /* Set the text color */
+}
+
+#title h1 {
+  /* Add custom styles here if needed */
+  display: block;
+  font-size: 2em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.map {
+  width: 80%;
+}
+
+
